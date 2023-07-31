@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #c7ffeb;
+}
+
+a{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+
+*::after, *::before {
+    box-sizing: inherit;
+  }
+
+/* ヘッダを上に固定 */
+header{
+    padding: 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999; /*重なりを調整*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+}
+  
+header ul {
+    background-color: black;
+    /* list-style: none; */
+    display: flex;
+    justify-content: flex-end; /* 右寄せに変更 */
+    align-items: center;
+    padding: 0 3px;
+    gap: 16px;
+    /* margin-top: 16px; */
+}
+  
+header ul li a {
+    background-color: black;
+    color: #42e1a8;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s;
+}
+  
+header li {
+    display: flex;
+}
+
+h1{
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+img{
+    margin: auto;
+    display: block;      
+}
+
+.about h2,.about h3{
+    text-align: center;
+}
+
+.about h2{
+    padding-top: 4rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.about h3{
+    padding-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+footer{
+    margin: 0;
+    padding-top: 10em;
+    padding-bottom: 3rem;
+    text-align: center;
+    display: flex;
+    align-items: center; /* 垂直方向中央に揃える */
+    justify-content: center; /* 水平方向中央に揃る*/
+    width: 100%;
+}
